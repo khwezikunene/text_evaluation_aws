@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Processed Data </title>
+<head>
+
+<body>
+        <h1> Sentence stats </h1>
+        <table border="1" cellpadding="5">
+                <thead>
+                        <tr>
+                                {% for header in table[0] %}
+                                        <th> {{ header}} </th>
+                                {% endfor %}
+                        </tr>
+                <thead>
+                <tbody>
+                        {% for row in table %}
+                                <tr>
+                                        <td> {{ row.Metric }}</td>
+                                        <td> {{ row.Value }}</td>
+                                <tr>
+                        {% endfor %}
+                </tbody>
+        </table>
+</body>
+</html>
+
+
